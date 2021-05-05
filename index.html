@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gato Juego Online</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <h1 class="title">TRES EN RALLA</h1>
+
+    <div class="inicio-sesion">
+      <div class="container-demo container-tarjetas">
+        <div class="demo">
+          <form>
+            <input
+              type="button"
+              value="Play Demo"
+              class="btn-demo"
+              id="btn-demo"
+            />
+            <p>Iniciar Sesión</p>
+          </form>
+        </div>
+      </div>
+      <span class="arrow-left"> < </span>
+      <div class="container-login container-tarjetas">
+        <div class="Login">
+          <form>
+            <div class="container-username">
+              <input
+                type="text"
+                class="username"
+                id="username"
+                autocomplete="off"
+              />
+              <label for="username"> Username </label>
+            </div>
+
+            <div class="container-password">
+              <input
+                type="text"
+                class="password"
+                id="password"
+                autocomplete="off"
+              />
+              <label for="password">Password</label>
+            </div>
+
+            <input
+              type="button"
+              value="Login"
+              class="btn-login"
+              id="btn-login"
+            />
+            <p>¿No tienes cuenta?</p>
+          </form>
+        </div>
+      </div>
+      <span class="arrow-right"> > </span>
+      <div class="container-registro container-tarjetas">
+        <div class="registro">
+          <form>
+            <div>
+              <div class="container-username_registro">
+                <input
+                  type="text"
+                  id="username-registro"
+                  class="username-registro"
+                  autocomplete="off"
+                />
+                <label for="username-Registro">Username</label>
+              </div>
+
+              <div class="container-password_registro">
+                <input
+                  type="text"
+                  id="password-Registro"
+                  class="password-registro"
+                  autocomplete="off"
+                />
+                <label for="password-registro">Password</label>
+              </div>
+
+              <div class="container-email">
+                <input
+                  type="email"
+                  id="email"
+                  class="email"
+                  autocomplete="off"
+                />
+                <label for="email">Email</label>
+              </div>
+
+              <div class="container-age">
+                <input type="text" id="age" class="age" autocomplete="off" />
+                <label for="edad">Age</label>
+              </div>
+            </div>
+
+            <input
+              type="button"
+              value="Registrarse"
+              class="btn-registrarse"
+              id="btn-registrarse"
+            />
+            <p>Iniciar Sesión</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-juego">
+        <div class="tablero grid-container" id="tablero">
+          <div class="grid-item" id="0"></div>
+          <div class="grid-item" id="1"></div>
+          <div class="grid-item" id="2"></div>
+          <div class="grid-item" id="3"></div>
+          <div class="grid-item" id="4"></div>
+          <div class="grid-item" id="5"></div>
+          <div class="grid-item" id="6"></div>
+          <div class="grid-item" id="7"></div>
+          <div class="grid-item" id="8"></div>
+        </div>
+
+        <div class="setting">
+          <form>
+            <input type="button" value="try Again" id="again" class="again" />
+          </form>
+        </div>
+      </div>
+      
+      <div class="message">
+        <div><i class="fas fa-arrow-left"></i></div>
+        <p>Prueba aquí</p>
+      </div>
+    </div>
+
+    <script src="./js/demoLocalStorage.js"></script>
+  </body>
+</html>

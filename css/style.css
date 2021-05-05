@@ -1,0 +1,336 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  border-top: 1px solid rgb(255, 85, 85);
+  background: linear-gradient(to bottom,rgb(255, 85, 85,.15),transparent);
+  color: #fff;
+  padding: 20px 0px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+/* -------------------------------------------------- */
+/* VENANA DE INICIO */
+/* -------------------------------------------------- */
+.inicio-sesion {
+  display: flex;
+  margin: auto;
+  width: 700px;
+  height: 400px;
+  margin-top: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  justify-content: center;
+}
+/* ---- Efecto para el boton de cambiar de tarjeta ---- */
+.inicio-sesion > span {
+  user-select: none;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  text-shadow: 0px 0px 7px #f00;
+  
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+} 
+.inicio-sesion > span:hover {
+  color: #f007;
+  text-shadow: 0px 0px 7px #fff;
+} 
+.inicio-sesion .arrow-right {
+  transform: translate(225px, 170px);
+}
+.inicio-sesion .arrow-left {
+  transform: translate(-225px, 170px);
+}
+/* ------------------------------------------------------ */
+
+/*------ TARJETA DEMO -------*/
+.container-demo {
+  transform: translate(-400px) scale(.7);
+   opacity: .7; 
+}
+.container-demo form {
+  display: block;
+  position: relative;
+}
+.container-demo form input {
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0px 0px 10px #f00;
+  border: none;
+  outline: none;
+  background: linear-gradient(to right,rgba(41, 91, 255, 0.249),transparent);
+  font-size: 40px;
+}
+.container-demo form input:hover {
+  transition: all .2s linear;
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.249),transparent);
+  box-shadow: 0px 0px 10px #000 inset, 0px 0px 15px #000 inset, 0px 0px 17px #000 inset;
+  font-size: 42px;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 10px #f00,0px 0px 12px #f00, 0px 0px 14px #f00;
+}
+.container-demo form p {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* ------- TARJETA DE LOGIN  ------- */
+.container-login {
+  
+}
+.Login, .registro, .demo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+form .container-username {
+  top: 45px;
+}
+
+/*------------ Inicio - ESTILOS GENERALES ---------------- */
+.container-tarjetas {
+  position: absolute;
+  width: 350px;
+  height: 400px;
+}
+.inicio-sesion form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+  /* background: rgba(41, 91, 255, 0.308); */
+  background: linear-gradient(to right,rgba(41, 91, 255, 0.349),transparent);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 5px rgba(233, 75, 75, 0.692);
+}
+form div {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+form input {
+  height: 30px;
+  width: 100%;
+  outline: none;
+  position: relative;
+}
+
+/*------ Efecto de movimimiento del placeholder -------*/
+form div input {
+  background: #fff5;
+  padding-left: 5px;
+  border: none;
+  border-top: 1px solid #f00c;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+form div label {
+  user-select: none;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.575);
+  transform: translate(5px, -23px);
+}
+form div input:focus ~ label {
+  transition: all .3s linear;
+  transform: translate(5px, -48px);
+  color: #fffc;
+}
+/* ------------------------------------------------ */
+form [type = "button"] {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 17px;
+  letter-spacing: 2px;
+  position: relative;
+}
+form .btn-login, 
+form .btn-registrarse {
+  top: 40px;
+  background-color: rgba(233, 75, 75, 0.692);
+  border: none;
+  cursor: pointer;
+}
+form .btn-login:hover,
+form .btn-registrarse:hover {
+  letter-spacing: 5px;
+  transition: all .3s linear;
+  background-color: rgba(248, 66, 66, 0.815);
+  border: 1px solid #000c
+}
+
+form p {
+  user-select: none;
+  position: relative;
+  font-weight: bolder;
+  top: 15px;
+  color: #fffd;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+form p:hover {
+  transition: all .2s linear;
+  color: #f55c;
+}
+/* ---------Fin - ESTILOS GENERALES---------- */
+
+/* ----- TRJETA DE REGISTRO ------- */
+.container-registro {
+  transform: translate(400px) scale(.7);
+  opacity: .7;
+}
+.container-registro .registro {
+  width: 100%;
+  height: 100%;
+}
+.registro form div {
+  margin-bottom: 5px;
+}
+.registro form > input {
+  margin-bottom: 30px;
+}
+
+/* ------------------------------------------------ */
+/* FIN - VENTANA DE INICIO */
+/* ------------------------------------------------ */
+
+
+/* ------------------------------------------------ */
+/* FIN - VENTANA DE JUEGO*/
+/* ------------------------------------------------ */
+
+/* Inicio - TABLERO */
+.container {
+  display: flex;
+  margin: 60px 100px;
+  justify-content: space-around;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  box-shadow: 2px 3px 10px rgba(233, 75, 75, 0.692);
+}
+.container-juego {
+  display: block;
+}
+.tablero {
+  background-color: rgba(46, 45, 45, 0.25);
+  backdrop-filter: blur(5px);
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #fff5;
+  box-shadow: 5px 5px 5px #fff2;
+  display: grid;
+  padding: 5px 5px;
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: repeat(3, 160px);
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+}
+/* Fin - TABLERO */
+
+.grid-item {
+  backdrop-filter: blur(5px);
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  display: flex;
+  cursor: pointer;
+}
+.grid-item:hover {
+  box-shadow: 0px 0px 5px #fff;
+}
+
+/* Inicio - figura aspa o circulo */
+.grid-item > i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 80px;
+  text-align: center;
+  line-height: 200%;
+}
+.blue {
+  color: #24f;
+}
+.red {
+  color: red;
+}
+/*fin - figura aspa o circulo */
+
+/* Inicio- setting */
+form {
+  width: 100%;
+  height: 100%;
+}
+.setting input {
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 20px;
+  outline: none;
+  backdrop-filter: blur(1px);
+}
+
+/* start - Setting */
+.setting .again {
+  color: #fff;
+  border: none;
+  box-shadow: 0px 0px 5px #000c inset, 3px 3px 5px rgba(171, 223, 169, 0.562);
+  background: rgba(45, 153, 50, 0.61);
+}
+.setting .again:hover {
+  background: rgba(30, 104, 34, 0.61);
+  text-shadow: 2px 3px 5px #000c;
+  cursor: pointer;
+}
+/* End - Setting */
+
+/* MESSAGE */
+.container .message {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container .message div i {
+  color: rgb(124, 19, 19);
+  text-shadow: 0px 0px 10px #0f05;
+  font-size: 300px;
+}
+.container .message p {
+  font-size: 70px;
+  text-shadow: 2px 3px 5px #f00;
+}
